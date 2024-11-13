@@ -1,5 +1,5 @@
 import React from 'react';
-import {S} from '../style';
+import S from '../style';
 
 // const StyledDiv = styled.div`
 //   width: 100px;
@@ -11,7 +11,8 @@ const Styled01 = () => {
   return (
     <S.StyledDiv>
       스타일된 컴포넌트
-      <S.StyledButton>스타일 된 버튼</S.StyledButton>
+      <S.Input color={"pink"}/>
+      <S.StyledButton backgroundColor={"blue"}>스타일 된 버튼</S.StyledButton>
     </S.StyledDiv>
   );
 };

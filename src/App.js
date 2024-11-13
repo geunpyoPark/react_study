@@ -1,15 +1,21 @@
-import './App.css';
-import ProductContainer from './docs/life-cycle/function/memoization/ProductContainer';
-
+import { ThemeProvider } from 'styled-components';
+import GlobalStyle from './global/globalStyle';
+import theme from './global/theme';
+import AnimalsContainer from './docs/context/expert/AnimalsContainer';
+import CountContainer from './pages/docs/count/CountContainer';
+import FontContainer from './pages/docs/font/FontContainer';
 
 
 
 
 function App() {
   return (
-    <div>
-      <ProductContainer/>
-    </div>
+    <>
+      <ThemeProvider theme={theme}>
+      <GlobalStyle/>
+      <FontContainer/>
+      </ThemeProvider>
+    </>
   );
 }
 
