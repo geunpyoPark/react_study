@@ -4,7 +4,7 @@ import { bigger, bigger5Rem } from '../../../modules/font';
 
 const FontButtonComponent = () => {
   console.log(useSelector((state) => state))
-  const fontSize = useSelector((state) => state.fontSize);
+  const fontSize = useSelector((state) => state.font.fontSize);
   const dispacth = useDispatch();
   return (
     <div>
